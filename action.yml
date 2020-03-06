@@ -1,0 +1,21 @@
+name: 'Get Commit Difference Count Between Two Branches'
+author: "Jessica Wilson"
+description: 'Returns the commit difference count between two branches, given their branch names'
+inputs:
+  base-branch:
+    description: 'The name of the first branch'
+    required: true
+    default: 'master'
+  secondary-branch:
+    description: 'The name of the second branch'
+    required: true
+    default: 'development'
+outputs:
+  commit-difference-count:
+    description: 'The number of commits between the base branch and the secondary branch'
+runs:
+  using: 'node12'
+  main: 'index.js'
+branding:
+  icon: 'hash'
+  color: 'orange'
