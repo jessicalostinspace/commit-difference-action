@@ -6,6 +6,6 @@ secondaryBranch=$2
 
 commitDiffCount=''
 
-commitDiffCount=$(git log --oneline $scondaryBranch ^$baseBranch | wc -l)
+commitDiffCount=$(git log --oneline $secondaryBranch ^$baseBranch | wc -l)
 
 echo '{"commitDiffCount": "'$commitDiffCount'"}' 
