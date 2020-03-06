@@ -12,7 +12,7 @@ try {
   console.log(`base-branch: ${baseBranch}`);
   console.log(`secondary-branch: ${secondaryBranch}`);
 
-  if (regexp.test(baseBranch) && regexp.test(secondaryBranch)) {
+  if (!!baseBranch && !!secondaryBranch && regexp.test(baseBranch) && regexp.test(secondaryBranch)) {
     getCommitDifference(baseBranch, secondaryBranch);
   } else {
     const regexError = "Branch names must contain only numbers, strings, underscores, periods, and dashes.";
