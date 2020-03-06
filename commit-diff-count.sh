@@ -6,8 +6,8 @@ secondaryBranch=$2
 
 commitDiffCount=''
 
-baseBranchPath=$(git branch -r | grep $basebranch)
-secondaryBranchPath=$(git branch -r | grep $secondarybranch)
+baseBranchPath=$(git branch -r | grep $baseBranch)
+secondaryBranchPath=$(git branch -r | grep $secondaryBranch)
 
 commitDiffCount=$(echo $(git log --oneline $secondaryBranchPath ^$baseBranchPath | wc -l))
 
