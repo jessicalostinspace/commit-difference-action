@@ -1,5 +1,5 @@
 #!/bin/bash
-set -eou pipefail
+set -eoux pipefail
 
 baseBranch=$1
 secondaryBranch=$2
