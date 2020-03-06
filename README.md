@@ -22,7 +22,7 @@ The number of commits between the base branch and the secondary branch.
 
     - name: Get Commit Difference Count Between Two Branches
           id: cdc
-          uses: jessicalostinspace/commit-difference-action@v1.0.2
+          uses: jessicalostinspace/commit-difference-action@v1.0.0
           with:
-            base-branch: 'release-v' 
+            base-branch: 'release-v1.2.3' 
             secondary-branch: 'master'
