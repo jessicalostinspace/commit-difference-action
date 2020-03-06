@@ -43,6 +43,7 @@ async function getCommitDifference(baseBranch, secondaryBranch) {
     await exec.exec(`${src}/commit-diff-count.sh`, [baseBranch, secondaryBranch], options);
     const { commitDiffCount } = JSON.parse(output);
 
+    console.log('Adding test log');
     if (commitDiffCount) {
       console.log('\x1b[32m%s\x1b[0m', `Difference in commits between ${secondaryBranch} and ${baseBranch}: ${commitDiffCount}`);
       core.setOutput("commit-difference-count", commitDiffCount);
