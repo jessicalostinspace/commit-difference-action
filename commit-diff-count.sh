@@ -3,7 +3,7 @@ set -eoux pipefail
 
 baseBranch=$1
 secondaryBranch=$2
-circumflex=^
+circumflex='^'
 
 commitDiffCount=''
 
